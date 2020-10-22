@@ -1,0 +1,68 @@
+@media (max-width: 1000px)
+  .main
+    &__container
+      max-width: 90%
+
+
+@media (max-width: 768px)
+  .main
+    &__container
+      max-width: 80%
+    &__block
+      flex-direction: column
+      &_items
+        width: 100%
+      &_param
+        width: 96%
+        margin-left: auto
+        margin-right: auto
+        margin-top: 1rem
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        &-rover
+          width: 48%
+          margin-top: 0
+          margin-bottom: 1rem
+        &-camera
+          width: 48%
+          margin-top: 0
+          margin-bottom: 1rem
+        &-day
+          width: 48%
+          margin-top: 0
+        &-btn
+          width: 48%
+          margin-top: 0
+          & button
+            padding: .75rem
+
+@media (max-width: 400px)
+  html
+    font-size: 12px
+  .main
+    &__container
+      max-width: 100%
+    &__block
+      border-radius: 0
+      &_items
+        order: 2
+      &_item
+        width: 30%
+      &_param
+        width: 80%
+        margin-top: 0
+        margin-bottom: 2rem
+        order: 1
+        flex-direction: column
+        &-rover
+          width: 100%
+        &-camera
+          width: 100%
+        &-day
+          width: 100%
+          margin-bottom: 1rem
+        &-btn
+          width: 100%
